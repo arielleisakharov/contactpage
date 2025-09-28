@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #3c2a4d; /* subtle purple-black */
+      --primary: #3c2a4d;
       --light-bg: #f3f0fa;
       --text: #2c2c2c;
     }
@@ -26,8 +26,8 @@
     .card {
       background: #fff;
       padding: 2.5rem;
-      border-radius: 0; /* squared edges */
-      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      border-radius: 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       max-width: 500px;
       width: 90%;
       text-align: center;
@@ -35,7 +35,7 @@
 
     .name {
       font-size: 2rem;
-      font-weight: 500;
+      font-weight: 300;
       color: var(--primary);
       margin-bottom: 0.5rem;
     }
@@ -60,7 +60,7 @@
 
     .links-bottom {
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       gap: 1rem;
     }
 
@@ -69,10 +69,11 @@
       color: #fff;
       text-decoration: none;
       padding: 0.75rem 1rem;
-      border-radius: 0; /* squared buttons */
+      border-radius: 0;
       font-weight: 300;
       transition: background 0.3s ease;
       border: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: inline-block;
     }
 
@@ -91,7 +92,7 @@
   <div class="card">
     <div class="name">Arielle Isakharov</div>
     <div class="title">Graduate Researcher</div>
-    <div class="location">Portland, OR</div>
+    <div class="location">Vollum Institute, OHSU</div>
 
     <div class="links-top">
       <a class="link-button linkedin-button" href="https://www.linkedin.com/in/arielle-isakharov" target="_blank">Connect on LinkedIn</a>
@@ -99,7 +100,7 @@
 
     <div class="links-bottom">
       <a class="link-button" href="mailto:arielleisakharov@gmail.com">Email</a>
-      <a class="link-button" href="https://tapsnap.me/arielle_isakharov/" target="_blank">TapSnap Profile</a>
+      <a class="link-button" href="contact.vcf" download>Download contact to phone</a>
     </div>
   </div>
 </body>
