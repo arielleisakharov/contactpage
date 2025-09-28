@@ -60,8 +60,10 @@
 
     .links-bottom {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
+      margin-bottom: 2rem;
     }
 
     .link-button {
@@ -85,6 +87,8 @@
       font-size: 1.1rem;
       font-weight: 500;
       padding: 1rem 1.5rem;
+      background: linear-gradient(135deg, #3c2a4d, #5e3ea1);
+      box-shadow: 0 6px 16px rgba(60, 42, 77, 0.3);
     }
   </style>
 </head>
@@ -100,7 +104,8 @@
 
     <div class="links-bottom">
       <a class="link-button" href="mailto:arielleisakharov@gmail.com">Email</a>
-      <a class="link-button" href="contact.vcf" download>Download contact to phone</a>
+      <a class="link-button" href="contact.vcf" download>Save Contact</a>
+      <a class="link-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf2fqhrqYp-EpEdhFZ-w02U8ywB6u0TUDO7ug3hjVMH44hiKA/viewform?usp=dialog" target="_blank">Submit Info</a>
     </div>
   </div>
 </body>
