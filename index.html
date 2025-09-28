@@ -28,7 +28,7 @@
       padding: 2rem 1.5rem 1.5rem;
       border-radius: 0;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      max-width: 400px; /* narrower box */
+      max-width: 400px;
       width: 90%;
       text-align: center;
       animation: fadeIn 0.8s ease-in;
@@ -41,8 +41,8 @@
     }
 
     .profile-img {
-      width: 180px;
-      height: 180px;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -58,7 +58,7 @@
       font-size: 2rem;
       font-weight: 300;
       color: var(--primary);
-      margin-top: 100px; /* space for overlapping image */
+      margin-top: 100px;
       margin-bottom: 0.5rem;
     }
 
@@ -98,7 +98,9 @@
       transition: background 0.3s ease, transform 0.2s ease;
       border: none;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       flex: 1;
       min-width: 0;
       white-space: normal;
@@ -107,7 +109,8 @@
 
     .link-button:active {
       transform: scale(0.98);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      background: #1a1324;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
 
     .link-button:hover {
@@ -118,8 +121,12 @@
       font-size: 1.1rem;
       font-weight: 500;
       padding: 1rem 1.5rem;
-      background: linear-gradient(135deg, #3c2a4d, #5e3ea1);
+      background-image: linear-gradient(135deg, #3c2a4d, #5e3ea1);
       box-shadow: 0 6px 16px rgba(60, 42, 77, 0.3);
+    }
+
+    .mobile-break {
+      white-space: normal;
     }
   </style>
 </head>
@@ -136,7 +143,9 @@
 
     <div class="links-bottom">
       <a class="link-button" href="contact.vcf" download>Save Contact</a>
-      <a class="link-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf2fqhrqYp-EpEdhFZ-w02U8ywB6u0TUDO7ug3hjVMH44hiKA/viewform?usp=dialog" target="_blank">Share My Info</a>
+      <a class="link-button" href="https://docs.google.com/forms/d/e/1FAIpQLSf2fqhrqYp-EpEdhFZ-w02U8ywB6u0TUDO7ug3hjVMH44hiKA/viewform?usp=dialog" target="_blank">
+        <span class="mobile-break">Share<br>My Info</span>
+      </a>
       <a class="link-button" href="mailto:arielleisakharov@gmail.com">Email</a>
     </div>
   </div>
