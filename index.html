@@ -31,6 +31,12 @@
       max-width: 500px;
       width: 90%;
       text-align: center;
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     .profile-img {
@@ -82,10 +88,15 @@
       padding: 0.75rem 1rem;
       border-radius: 0;
       font-weight: 300;
-      transition: background 0.3s ease;
+      transition: background 0.3s ease, transform 0.2s ease;
       border: none;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       display: inline-block;
+    }
+
+    .link-button:active {
+      transform: scale(0.98);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
     .link-button:hover {
@@ -98,6 +109,18 @@
       padding: 1rem 1.5rem;
       background: linear-gradient(135deg, #3c2a4d, #5e3ea1);
       box-shadow: 0 6px 16px rgba(60, 42, 77, 0.3);
+    }
+
+    @media (max-width: 480px) {
+      .links-bottom {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .link-button {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
